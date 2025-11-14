@@ -1,104 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zara hshmi - Resume</title>
+  <title>زهرا هاشمی - رزومه</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Zara hshmi</h1>
-    <p>Email: <a href="mailto:zaraahshmi@email.com">zaraahshmi@email.com</a></p>
-    <p>GitHub: <a href="https://github.com/zarahshmi" target="_blank">github.com/zarahshmi</a></p>
-  </header>
+  <!-- دکمه حالت شب -->
+  <button class="toggle-btn" onclick="document.body.classList.toggle('dark-mode')">🌙</button>
 
-  <button class="toggle-btn" onclick="document.body.classList.toggle('dark-mode')">
-  🌙
-  </button>
+  <!-- لایه دو ستونه -->
+  <div class="container">
 
+    <!-- ستون سمت راست -->
+    <aside class="sidebar">
 
-  <nav>
-    <a href="#about">About</a> |
-    <a href="#education">Education</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#languages">Languages</a>
-  </nav>
+      <h1>زهرا هاشمی</h1>
+      <p>ایمیل: <a href="mailto:zaraahshmi@email.com">zaraahshmi@email.com</a></p>
+      <p>گیت‌هاب: <a href="https://github.com/zarahshmi" target="_blank">github.com/zarahshmi</a></p>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Computer Engineering student passionate about software development and web technologies.
-      I have hands-on experience with Java, C++, and Django through university projects,
-      where I built simple games and web applications. I enjoy solving problems and continuously improving my coding skills.
-    </p>
-  </section>
+      <nav class="menu">
+        <a href="#about">درباره من</a>
+        <a href="#education">تحصیلات</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#languages">زبان‌ها</a>
+      </nav>
 
-  <section id="education">
-    <h2>Education</h2>
-    <article>
-      <h3>Bachelor of Computer Engineering</h3>
-      <p>Chamran University — 2021 to Present</p>
-    </article>
-  </section>
+    </aside>
 
-  <section id="projects">
-    <h2>Projects & Experience</h2>
+    <!-- ستون سمت چپ (محتوا) -->
+    <main class="content">
 
-    <article>
-      <h3>Personal Website Project</h3>
-      <p>
-        Designed and built a personal portfolio website using HTML and basic structure.
-        Focused on accessibility and clarity.
-      </p>
-      <p>View on GitHub: <a href="https://github.com/zarahshmi/zahra-hashemi-resume
-" target="_blank">Portfolio Repository</a></p>
-    </article>
+      <section id="about">
+        <h2 class="section-title">درباره من</h2>
+        <p>
+          دانشجوی مهندسی کامپیوتر هستم و به توسعه نرم‌افزار، فناوری‌های وب و مباحث یادگیری ماشین و دیتا ساینس علاقه‌مندم.
+          تجربه عملی با Java، C++، Django، SQL و برنامه‌نویسی میکروکنترلر دارم.
+        </p>
+      </section>
 
-    <article>
-      <h3>To-Do App</h3>
-      <p>
-        Created a simple To-Do application using JavaScript with add, delete, and edit functionality.
-      </p>
-    </article>
+      <section id="education">
+        <h2 class="section-title">تحصیلات</h2>
 
-    <article>
-      <h3>University Django Projects</h3>
-      <p>
-        Developed small-scale web applications using Django, including a simple game and an interactive website
-        for academic projects. Learned backend development, routing, and database integration.
-      </p>
-    </article>
-  </section>
+        <div class="timeline-card">
+          <span class="card-date">۲۰۲۱ - اکنون</span>
+          <h3>کارشناسی مهندسی کامپیوتر</h3>
+          <h4>دانشگاه شهید چمران</h4>
+        </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java and Object-Oriented Programming</li>
-      <li>C++ programming</li>
-      <li>Django (Python web framework)</li>
-      <li>HTML5 and semantic structure</li>
-      <li>Git & GitHub</li>
-      <li>Basic CSS and JavaScript</li>
-      <li>Problem solving and teamwork</li>
-    </ul>
-  </section>
+      </section>
 
-  <section id="languages">
-    <h2>Languages</h2>
-    <ul>
-      <li>English — Intermediate</li>
-      <li>Persian — Native</li>
-    </ul>
-  </section>
+      <section id="projects">
+        <h2 class="section-title">پروژه‌ها و تجربیات</h2>
 
-  <footer>
-    <p>© 2025 Zara Ahshmi — All rights reserved.</p>
-  </footer>
+        <div class="timeline-card">
+          <span class="card-date">۲۰۲۴</span>
+          <h3>پروژه‌های Django</h3>
+          <p>پیاده‌سازی وب‌اپلیکیشن‌های کوچک دانشگاهی شامل بازی حدس کلمه و سایت سفارش غذا.</p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="card-date">۲۰۲۳</span>
+          <h3>سیستم سفارش آنلاین غذا (SQL)</h3>
+          <p>
+            طراحی دیتابیس کامل با مدل‌سازی رابطه‌ای، نرمال‌سازی و کوئری‌های سطح پیشرفته.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="card-date">۲۰۲۳</span>
+          <h3>پروژه NLP</h3>
+          <p>
+            پردازش متن، پیش‌پردازش، Text Classification و مفاهیم Information Retrieval.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="card-date">۲۰۲۳</span>
+          <h3>میکروکنترلر LPC1768</h3>
+          <p>آشنایی با برنامه‌نویسی پایه امبدد و کار عملی با LPC1768.</p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="card-date">۲۰۲۳</span>
+          <h3>Webots</h3>
+          <p>آشنایی با مفاهیم پایه رباتیک و شبیه‌سازی رفتار ربات در Webots.</p>
+        </div>
+
+      </section>
+
+      <section id="skills">
+        <h2 class="section-title">مهارت‌ها</h2>
+
+        <ul class="skills">
+          <li>Java</li>
+          <li>C++</li>
+          <li>Django</li>
+          <li>HTML5</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>Microcontroller LPC1768</li>
+          <li>NLP</li>
+          <li>Information Retrieval</li>
+          <li>Webots</li>
+          <li>Git & GitHub</li>
+        </ul>
+
+      </section>
+
+      <section id="languages">
+        <h2 class="section-title">زبان‌ها</h2>
+        <ul class="skills">
+          <li>انگلیسی — متوسط</li>
+          <li>فارسی — نیتیو</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© ۲۰۲۵ زهرا هاشمی</p>
+      </footer>
+
+    </main>
+  </div>
 
 </body>
 </html>
-
